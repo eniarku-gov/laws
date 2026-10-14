@@ -1,0 +1,51 @@
+```{r SETUP}
+#| include: false
+intro_date = format(as.Date(params$dates$intro), "%B %e, %Y")
+
+has_adopt_date = !is.null(params$dates$adopt)
+adopt_date = format(as.Date(params$dates$adopt), "%B %e, %Y")
+
+has_assent_date = !is.null(params$dates$assent)
+assent_date = format(as.Date(params$dates$assent), "%B %e, %Y")
+
+has_effective_date = !is.null(params$dates$effective)
+effective_date = format(as.Date(params$dates$effective), "%B %e, %Y")
+is_effective = as.Date(params$dates$effective) <= as.Date(lubridate::today())
+```
+
+::: {.history-intro}
+<!--Introduced by {{< meta params.sponsor >}} on {{< meta params.intro_date >}}.-->
+```{r, results='asis', echo=FALSE}
+cat(paste0("Introduced by ", params$sponsor, " on ", intro_date, "."))
+```
+:::
+
+::: {.history-post}
+```{r, results='asis', echo=FALSE}
+if (has_adopt_date) { cat(paste0("Adopted by the Council of State on ", adopt_date, ".")) }
+```
+
+```{r, results='asis', echo=FALSE}
+if (has_assent_date) { cat(paste0("Granted royal assent and enacted on ", assent_date, ".")) }
+```
+
+```{r, results='asis', echo=FALSE}
+if (has_adopt_date) {
+    if (has_assent_date) {
+        if (has_effective_date) {
+            if (is_effective) {
+                cat(paste0("Entered into effect on ", effective_date, "."))
+            } else {
+                cat(paste0("_Scheduled to enter into effect on ", effective_date, "._"))
+            }
+        } else {
+            if (as.Date(params$assent_date) <= as.Date(lubridate::today())) {
+                cat("Entered into effect immediately upon enactment.")
+            } else {
+                cat("_Scheduled to enter into effect immediately upon enactment._")
+            }
+        }
+    }
+}
+```
+:::

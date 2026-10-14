@@ -1,0 +1,51 @@
+---
+title: 26CR4
+params:
+    sponsor: The Prince of August
+    short_title: Internal Procedures Act
+    long_title: A resolution for an ACT OF STATE to provide for certain internal procedures of the Council of State.
+    enacted_title: AN ACT OF STATE to provide for certain internal procedures of the Council of State.
+    enacted_as: 2026 AS 3
+    title: 5
+    creates: 2026 AS 3
+    amends: 
+    regulates: 
+    repeals: 
+    dates:
+        intro: 2026-01-01
+        adopt: 2026-01-01
+        assent: 2026-01-01
+        effective: 
+format: html
+---
+
+{{< include _res-head.qmd >}}
+
+## Sec. 5.001 --- Short title.
+This act may be cited as the "Internal Procedures Act.
+
+## Sec. 5.002 --- Regular sessions; member attendance.
+The Council of State shall conduct all public business during regular sessions. Members shall attend sessions in person or by means of two-way video and audio technology.
+
+## Sec. 5.003 --- Quorum; require to conduct business.
+The Council of State shall not conduct any public business unless a quorum of 51% or more of its members are present.
+
+## Sec. 5.004 --- Order of business.
+The Council of State shall conduct public business in the following sequence:
+    (a) Introductions of resolutions.
+    (b) Debates on resolutions, including, but not limited to, amendments and procedural motions.
+    (c) Votes on resolutions under consideration.
+    (d) Motions and procedural matters relating to the operations of the Council of State, including, but not limited to, the rules of the Council of State and scheduling matters.
+    (e) Any other public business.
+
+## Sec. 5.005 --- Crown-in-Council; equal vote.
+A vote submitted by the Crown-in-Council during a session of the Council of State shall be considered equally to a vote submitted by any other member thereof.
+
+## Sec. 5.006 --- Internal rules; require two-thirds vote to adopt, amend, or repeal.
+The Council of State may, by a two-thirds vote of all members, adopt, amend, or repeal, in part or in entirety, certain rules governing the procedures and operations of the Council of State, including, but not limited to, those relating to the form and manner of debate and voting during a session thereof.
+
+## Sec. 5.007 --- Absence of rule governing certain conduct; applicability of generally acceptable parliamentary procedure; ruling of chair.
+In the absence of a rule or procedure governing certain activities of the Council of State, the generally acceptable principles of parliamentary procedure shall apply, subject to a ruling of the member presently chairing the session to that effect.
+
+## Sec. 5.008 --- Resolutions; effective date.
+A resolution adopted by the Council of State and granted assent by The Sovereign that does not specify the effective date of the provisions thereof shall become effective at 12:00 AM on the day immediately following the date on which assent was granted.

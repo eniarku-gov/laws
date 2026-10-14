@@ -1,0 +1,10 @@
+{
+  "listingMap": {
+    "2026.qmd": [
+      "resolutions/*qmd",
+      "resolutions/2026/*qmd",
+      "resolutions/2026/*.qmd",
+      "2026/*.qmd"
+    ]
+  }
+}

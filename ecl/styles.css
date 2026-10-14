@@ -1,0 +1,97 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+#quarto-sidebar {
+    width: 350px
+}
+*/
+
+
+/* ---------- HEADER ---------- */
+.coat-of-arms {
+    display: block;
+    margin: 1.5rem auto 0 auto;
+    max-width: 10rem;
+    height: auto;
+}
+
+.quarto-title > * {
+    text-align: center;
+    font-weight: 300;
+    padding-top: 0.5em;
+}
+
+.enacted-title {
+    text-align: center;
+}
+
+.enacting-clause {
+    text-align: center;
+    font-style: italic;
+}
+
+
+
+/* ---------- CONTENT ---------- */
+/* Chapter headings (Chapter I) */
+.code-chapter > h1 {
+  text-align: center;
+  font-size: 1.25em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+ 
+/* Section headings (Sec. N.NNN) */
+.code-section > h2 {
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+  padding-top: 0.5rem;
+  font-size: 1em;
+  border-bottom: 0;
+}
+ 
+/* Body paragraphs: indented. Child selectors keep this off the headings, the
+   History block (a <div class="history">), tables, lists and blockquotes. */
+.code-section > p,
+.code-section section > p {
+  margin-bottom: 0;
+  line-height: 1.5rem;
+  text-indent: 25px;
+}
+
+/* Justify section chunks; small History portion */
+section {
+    text-align: justify;
+    
+    .history {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        font-size: 80%;
+    }
+}
+
+/* List items */
+.list-level-1,
+.list-level-1 > p {
+    margin-bottom: 0;
+    line-height: 1.5rem;
+    text-indent: 25px;
+}
+
+.list-level-2,
+.list-level-2 > p {
+    margin-bottom: 0;
+    line-height: 1.5rem;
+    text-indent: 25px;
+}
+
+.list-level-3,
+.list-level-3 > p {
+    margin-bottom: 0;
+    line-height: 1.5rem;
+    text-indent: 25px;
+}

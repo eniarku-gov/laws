@@ -1,0 +1,50 @@
+---
+title: 26CR3
+params:
+    sponsor: The Grand Duke
+    short_title: Great Seal Act
+    long_title: A resolution for an ACT OF STATE to provide for the Great Seal of the Realm; to provide for the uses and purposes thereof; and to establish the office, powers, and duties of the Lord High Chancellor.
+    enacted_title: AN ACT OF STATE to provide for the Great Seal of the Realm; to provide for the uses and purposes thereof; and to establish the office, powers, and duties of the Lord High Chancellor.
+    enacted_as: 2026 AS 2
+    title: 1
+    creates: 2026 AS 2
+    amends: 
+    regulates: 
+    repeals: 
+    dates:
+        intro: 2026-01-01
+        adopt: 2026-01-01
+        assent: 2026-01-01
+        effective: 
+format: html
+---
+
+{{< include _res-head.qmd >}}
+
+## Sec. 1.101 --- Short title.
+This act may be cited as the "Great Seal Act.
+
+## Sec. 1.102 --- Great seal; use as official seal.
+The Great Seal of the Realm shall be the official seal of The Sovereign and the state.
+
+## Sec. 1.103 --- Great seal; description.
+The Great Seal of the Realm shall be comprised of a lion, around which shall appear the words "MAGNUM SIGILLUM MAGNI DUCATUS", around which shall appear the words "ALEXANDER PRIMUS PER GRATIAM ET VOLUNTATEM POPULI MAGNUS DUX REGNI DEFENSOR CONSTITUTIONIS ET CETERA".
+
+## Sec. 1.104 --- Great seal; impression on certain documents.
+An electronic or material impression of the Great Seal of the Realm shall be placed on or affixed to those instruments which require the assent of The Sovereign to enter into effect. Any such instrument which does not bear the Great Seal of the Realm shall be considered null.
+
+## Sec. 1.105 --- Lord High Chancellor; establish; appointment and term of office.
+(1) The office of the Lord High Chancellor is established as an entity of the state.
+
+(2) The Lord High Chancellor shall be appointed to his office and to the Council of State by, and serve at the pleasure of, The Sovereign.
+
+## Sec. 1.106 --- Great seal; prohibit use for unofficial purposes.
+No person or entity of the state, with the exception of the Lord High Chancellor or any other such person or entity of the state as provided by law, shall make or prepare any instrument bearing a facsimile or reproduction of the Great Seal of the Realm for any purposes unconnected with official functions of the state.
+
+## Sec. 1.107 --- Great seal; affixing to instruments by Lord High Chancellor.
+(1) Upon receipt of an adopted resolution of the Council of State providing for an act of state and a warrant issued by The Sovereign granting assent to that resolution, the Lord High Chancellor shall place on or affix to that resolution the Great Seal of the Realm.
+
+(2) Upon receipt of orders-in-council, letters patent, or a sovereign proclamation issued by The Sovereign, the Lord High Chancellor shall place on or affix to that instrument the Great Seal of the Realm.
+
+## Sec. 1.108 -- Great seal; violations as misdemeanor.
+A person who violates any provision of this act shall be guilty of a misdemeanor.

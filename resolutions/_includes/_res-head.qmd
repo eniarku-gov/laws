@@ -1,0 +1,11 @@
+::: {.history}
+{{< include _res-history.qmd >}}
+:::
+
+::: {.long-title}
+{{< meta params.long_title >}}
+:::
+
+::: {.enacting-clause}
+BE IT ENACTED BY THE CROWN-IN-COUNCIL:
+:::

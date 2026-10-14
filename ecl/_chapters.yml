@@ -1,0 +1,13 @@
+book:
+  chapters:
+    - index.qmd
+    - part: "Title 1 — General Provisions"
+      chapters:
+        - href: title1/2026-as-1.qmd
+          text: "Construction and Codification Act (1.001 \\.\\.\\. 1.007)"
+        - href: title1/2026-as-2.qmd
+          text: "Great Seal Act (1.101 \\.\\.\\. 1.108)"
+    - part: "Title 5 — The Council of State"
+      chapters:
+        - href: title5/2026-as-3.qmd
+          text: "Internal Procedures Act (5.001 \\.\\.\\. 5.008)"

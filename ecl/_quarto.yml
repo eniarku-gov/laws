@@ -1,0 +1,30 @@
+project:
+  type: book
+  output-dir: _book
+  resources:
+    - images/GDEN_coa_middle_state.svg
+
+book:
+  title: "Eniarku Compiled Laws"
+  author: "Government of Eniarku"
+
+metadata-files:
+  - _chapters.yml
+
+format:
+  html:
+    css: styles.css
+    grid:
+      sidebar-width: 300px
+      body-width: 800px
+      margin-width: 300px
+      gutter-width: 2em
+    filters:
+      - list-detect.lua
+      - latest-section.lua
+    include-after-body: act-breadcrumb.html
+
+  pdf:
+    documentclass: scrreprt
+
+number-sections: false

@@ -1,0 +1,30 @@
+---
+title: 26CR30
+params:
+    sponsor: The Marquis of Hickory
+    short_title: Construction and Codification (Amendment) Act
+    long_title: A resolution to AMEND 2026 AS 1, entitled the "Construction and Codification Act".
+    enacted_title: AN ACT OF STATE to amend 2026 AS 1, entitled the "Construction and Codification Act".
+    enacted_as: 2026 AS 17
+    title: 1
+    creates: 
+    amends: 2026 AS 1
+    regulates: 
+    repeals: 
+    dates:
+        intro: 2026-09-23
+        adopt: 2026-09-25
+        assent: 2026-09-30
+        effective: 2026-10-01
+format: html
+---
+
+{{< include _res-head.qmd >}}
+
+## Sec. 1.001 --- Short title.
+This act may be cited as the "Construction and Codification Act", ***AND HERE'S THE NEW EDITS!!!!!!!!!!***
+
+## Sec. 1.005 --- Resolutions; adoption by Council of State; enrolling, printing, and presentation; royal assent. {status="repealed"}
+
+## Sec. 1.007 --- Eniarku Compiled Laws; repealed provisions; require printing with historical information.
+Any provisions of the Eniarku Compiled Laws that is repealed by a resolution furnished under this act must be printed in the Eniarku Compiled Laws with sufficient historical information such that a reasonable person would be able to identify the previous versions of those provisions.

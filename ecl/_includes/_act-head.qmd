@@ -1,0 +1,13 @@
+<!--
+::: {.act-coa}
+![](./GDEN_middle_IMG.png){width=150}
+:::
+-->
+
+::: {.long-title}
+{{< meta params.long_title >}}
+:::
+
+::: {.enacting-clause}
+Be It Enacted By The Crown-In-Council:
+:::

@@ -1,0 +1,3 @@
+# Title 1 — General Provisions
+
+"Index" table containing all relevant acts under this title. (Can probably be done by iterating over every QMD file in the corresponding directory, extracting the relevant metadata, using Lua filters to get the section ranges, etc.)

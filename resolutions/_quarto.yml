@@ -1,0 +1,20 @@
+project:
+  type: book
+
+book:
+  title: "Council Resolutions"
+  author: "Council of State of Eniarku"
+  date: "10/12/2026"
+  chapters:
+    - index.qmd
+    - 2026.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+  pdf:
+    documentclass: scrreprt
+
+number-sections: false

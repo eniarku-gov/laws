@@ -1,0 +1,9 @@
+---
+title: Council Resolutions
+listing:
+    contents: "resolutions/*.qmd"
+    type: table
+    fields: [title, file-modified]
+---
+
+Here's the index for all Council Resolutions (CRs)....

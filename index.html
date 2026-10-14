@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laws — Eniarku</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff; --fg: #1d2330; --muted: #5b6475;
+      --card: #f5f6f8; --line: #d9dce3; --accent: #1f4f8f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #12151c; --fg: #e8eaf0; --muted: #a2a9b8;
+              --card: #1b2029; --line: #2d3340; --accent: #8db6ee; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--fg);
+           font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem 2rem; text-align: center; }
+    img.arms { display: block; margin: 0 auto 1.25rem; max-height: 140px; width: auto; }
+    h1 { margin: 0 0 .25rem; font-size: 2rem; }
+    p.lead { margin: 0 0 2rem; color: var(--muted); }
+    .cards { display: grid; gap: 1rem; text-align: left; }
+    a.card { display: block; padding: 1rem 1.25rem; background: var(--card);
+             border: 1px solid var(--line); border-radius: .5rem;
+             color: var(--fg); text-decoration: none; }
+    a.card:hover, a.card:focus { border-color: var(--accent); }
+    a.card strong { display: block; color: var(--accent); font-size: 1.1rem; }
+    a.card span { color: var(--muted); font-size: .95rem; }
+    footer { margin-top: 2.5rem; font-size: .9rem; }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <main>
+    <!-- Reuses the image shipped with the compiled-law book; removed if it isn't there. -->
+    <img class="arms" src="ecl/images/coat-of-arms.png" alt="Coat of arms" onerror="this.remove()">
+    <h1>Laws</h1>
+    <p class="lead">The compiled law and the resolutions that make it.</p>
+
+    <div class="cards">
+      <a class="card" href="ecl/">
+        <strong>Compiled Law</strong>
+        <span>Acts as currently in force, organized by Title, with amendment histories.</span>
+      </a>
+      <a class="card" href="resolutions/">
+        <strong>Council Resolutions</strong>
+        <span>The resolutions that propose, create, amend and repeal Acts and regulations.</span>
+      </a>
+      <!-- Add future collections here, e.g. Orders-in-Council, Letters Patent, Sovereign Proclamations:
+      <a class="card" href="oic/"><strong>Orders-in-Council</strong><span>...</span></a>
+      -->
+    </div>
+
+    <footer><a href="https://eniarku.org/">&larr; eniarku.org</a></footer>
+  </main>
+</body>
+</html>

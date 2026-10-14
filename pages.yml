@@ -1,0 +1,57 @@
+name: Build and deploy laws site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:            # "Run workflow" button in the Actions tab
+  schedule:
+    # Daily rebuild so CRs take effect on their effective date. Cron runs in UTC:
+    # 05:15 UTC = 00:15 EST / 01:15 EDT, just after local midnight. (The time zone used
+    # to decide "today" is SITE_TZ in build-local.sh.)
+    - cron: "15 5 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
+
+      - name: Install R packages
+        run: Rscript -e 'install.packages("yaml")'
+
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.6.40       # the version this setup was tested with
+
+      # generate.R -> render ecl -> render resolutions -> assemble _site -> link check
+      - name: Build site
+        run: bash build-local.sh --no-jekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

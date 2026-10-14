@@ -1,0 +1,40 @@
+<script>
+/* Act pages only (those whose generated header carries <meta name="act-id">):
+   1. breadcrumb's last item shows the Act ID instead of its title
+   2. coat of arms is inserted directly above the title (below the breadcrumbs) */
+(function () {
+  var COAT_OF_ARMS = "images/GDEN_coa_middle_state.svg";   // path relative to the project root; "" disables
+  var done = false;
+
+  function run() {
+    if (done) return;
+    var meta = document.querySelector('meta[name="act-id"]');
+    if (!meta) { done = true; return; }             // not an Act page
+    var header = document.getElementById("title-block-header");
+    if (!header) return;                            // not parsed yet; retry later
+    done = true;
+
+    var id = meta.getAttribute("content");
+    document.querySelectorAll(".quarto-page-breadcrumbs .breadcrumb-item:last-child").forEach(function (li) {
+      var t = li.querySelector(".chapter-title") || li.querySelector("a") || li;
+      t.textContent = id;
+    });
+
+    if (COAT_OF_ARMS) {
+      var off = document.querySelector('meta[name="quarto:offset"]');
+      var img = document.createElement("img");
+      img.className = "coat-of-arms";
+      img.alt = "Coat of arms";
+      img.src = (off ? off.getAttribute("content") : "../") + COAT_OF_ARMS;
+      // Place it directly above the title. (On wide screens Quarto puts the breadcrumb nav
+      // *inside* the title block as its first child, so "first child" would be above it.)
+      var title = header.querySelector(".quarto-title") || header.querySelector("h1.title");
+      if (title && title.parentNode) title.parentNode.insertBefore(img, title);
+      else header.appendChild(img);
+    }
+  }
+
+  run();                                            // the script sits after <main>, so this normally succeeds
+  document.addEventListener("DOMContentLoaded", run);
+})();
+</script>
